@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вам подарок!</title>
+    <style>
+        body { margin: 0; padding: 0; background: #000; color: #fff; text-align: center; font-family: sans-serif; cursor: pointer; height: 100vh; display: flex; align-items: center; justify-content: center; }
+        h1 { font-size: 30px; user-select: none; }
+    </style>
+</head>
+<body>
+
+    <h1>Нажмите, чтобы открыть подарок 🎁</h1>
+
+    <audio id="prank" src="sound.mp3"></audio>
+
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('prank');
+            audio.play();
+        });
+    </script>
+
+</body>
+</html>
